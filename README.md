@@ -39,7 +39,7 @@ pip install git+https://github.com/discood/bayesian-optimization.git
 * Numpy
 * Scikit-learn
 
-あとはbayesian_1obj.pyを実行するだけです
+あとはbayesian_1obj.ipynbを上から順に実行するだけです
 
 ## 解説
 今回のベイズ最適化の目標は f(x)=xsin(x) (0<=x<=2π)の最大化です。
@@ -59,7 +59,7 @@ loop数はloopで指定できます。また、loopが終了するとその時�
 ![image](https://github.com/discood/bayesian-optimization/assets/92424566/675c9b1a-169f-4684-a9f1-774b8e3344ae)
 
 ## 詳しい解説
-kernelはC*[RBF](https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.kernels.RBF.html "RBF kernel")になります。これらの中の変数は周辺尤度を最大化することで最適化されます。
+ガウス過程回帰において点と点の間の補完に用いられるkernelはC*[RBF](https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.kernels.RBF.html "RBF kernel")になります。これらの中の変数は周辺尤度を最大化することで最適化されます。
 
 獲得関数は最もシンプルな獲得関数の一つであるUCBを使用しています。
 
