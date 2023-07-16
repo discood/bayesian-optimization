@@ -56,6 +56,7 @@ pip install git+https://github.com/discood/bayesian-optimization.git
 
 loop数はloopで指定できます。また、loopが終了するとその時点での関数予測がgraphフォルダに出力されます。
 
+![image](https://github.com/discood/bayesian-optimization/assets/92424566/675c9b1a-169f-4684-a9f1-774b8e3344ae)
 
 ## 詳しい解説
 kernelはC*[RBF](https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.kernels.RBF.html "RBF kernel")になります。これらの中の変数は周辺尤度を最大化することで最適化されます。
